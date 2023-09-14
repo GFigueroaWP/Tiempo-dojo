@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tiempo-dojo</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <nav>
+            <h1>DojoWeather</h1>
+            <ul>
+                <li>
+                    <a
+                        href="#"
+                        onclick="alert('Cargando informe meteorologico...')"
+                        >Bubbank</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        onclick="alert('Cargando informe meteorologico...')"
+                        >Chicago</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        onclick="alert('Cargando informe meteorologico...')"
+                        >Dallas</a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="header">
+                <h1>San jose</h1>
+                <span>
+                    <label for="temperatureFormat">show temperature in </label>
+                    <select name="temperature-format" id="temperatureFormat">
+                        <option value="celsius">°C</option>
+                        <option value="fahrenheit">°F</option>
+                    </select>
+                </span>
+            </div>
+            <hr />
+            <div class="forecast-info">
+                <div class="forecast-day" id="today">
+                    <h2>Today</h2>
+                    <img src="./assets/some_rain.png" alt="some rain" />
+                    <div class="detail">some rain</div>
+                    <div class="temperatures">
+                        <div class="max-temp">24°</div>
+                        <div class="min-temp">18°</div>
+                    </div>
+                </div>
+                <div class="forecast-day" id="tomorrow">
+                    <h2>Tomorrow</h2>
+                    <img src="./assets/some_sun.png" alt="some sun" />
+                    <div class="detail">some sun</div>
+                    <div class="temperatures">
+                        <div class="max-temp">27°</div>
+                        <div class="min-temp">19°</div>
+                    </div>
+                </div>
+                <div class="forecast-day" id="friday">
+                    <h2>Friday</h2>
+                    <img src="./assets/some_clouds.png" alt="some clouds" />
+                    <div class="detail">some clouds</div>
+                    <div class="temperatures">
+                        <div class="max-temp">21°</div>
+                        <div class="min-temp">16°</div>
+                    </div>
+                </div>
+                <div class="forecast-day" id="saturday">
+                    <h2>Saturday</h2>
+                    <img src="./assets/some_sun.png" alt="some sun" />
+                    <div class="detail">some sun</div>
+                    <div class="temperatures">
+                        <div class="max-temp">26°</div>
+                        <div class="min-temp">21°</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cookie-terms" id="cookies">
+            <div class="cookie-message">
+                <img src="./assets/cookie.png" alt="cookie image" />
+                <div class="cookie-description">
+                    <h3>Stop! Cookie Time</h3>
+                    <p>
+                        We use cookies (sadly not the edible ones) to
+                        personalize content and ads, to provide social media
+                        features and to analyze our traffic.
+                        <a href="#">Read more...</a>
+                    </p>
+                </div>
+                <button class="accept-btn" onclick="closeCookies()">I Accept</button>
+            </div>
+        </div>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
